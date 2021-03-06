@@ -18,6 +18,7 @@ axios.interceptors.response.use(async response => {
         return await Promise.reject(error);
     }
 })
+
 const responseBody = <T> (response: AxiosResponse<T>) => response.data;
 
 const requests = {
